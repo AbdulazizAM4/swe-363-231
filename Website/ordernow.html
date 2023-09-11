@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <nav class="Navigation">
+              <li class="Navigation"><a href="pizza.html">Home</a></li>
+              <li class="Navigation"><a href="order.html">Menu</a></li>
+              <li class="Navigation">Order</li>
+        </nav>
+        <title>Order Now!</title>
+    </head>
+    <body>
+        <form >
+            <label for="First Name">First Name</label>
+            <input type="text" name="First Name"
+            id="First Name">
+            <aside><p></p></aside>
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="Last Name"
+            id="Last Name">
+            <aside><p></p></aside>
+            <label for="City">Choose a city:</label>
+            <input list="City1" id="City" name="City" placeholder="Ex: Riyadh" />
+            <datalist id="City1">
+            <option value="Riyadh"></option>
+            <option value="Khobar"></option>
+            <option value="Jeddah"></option>
+            </datalist>
+            <aside><p></p></aside>
+            <label>Choose Types:</label>
+            <aside><p></p></aside>
+            <label>
+                <input type="checkbox" name="pizza" value="margharita">
+                Margharita
+              </label>
+              <br>
+              <label>
+                <input type="checkbox" name="pizza" value="truffle">
+                Truffle
+              </label>
+              <br>
+              <label>
+                <input type="checkbox" name="pizza" value="pepperoni">
+                Pepperoni
+              </label>
+              <br>
+              <aside><p></p></aside>
+              <Label for="emailAddress">Email:</Label>
+              <input id="emailAddress" type="email" />
+              <aside><p></p></aside>
+              <input type="radio" id="send" name="Send" value="checl"  />
+              <Label for="send">I would like to recieve advertisements.</Label>
+              <aside><p></p></aside>
+              <input type="submit" value="Place Order">
+            </form>
+            <p><a href="pizza.html">Return to main page.</a></p>
+          </body>
+          </html>
