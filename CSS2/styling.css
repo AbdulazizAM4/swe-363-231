@@ -1,0 +1,18 @@
+th{
+    text-transform: uppercase;
+}
+
+a{
+    color: green;
+}
+tr.top{
+    color: red
+}
+#the_most_important{
+    text-transform: uppercase;
+    background-color: gold;
+}
+em{
+    background-color: blue;
+}
+
