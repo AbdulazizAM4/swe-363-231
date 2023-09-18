@@ -4,6 +4,10 @@ th{
 
 a{
     color: green;
+    text-decoration: none;
+}
+a.firstnav{
+    text-decoration: underline;
 }
 tr.top{
     color: red
@@ -15,4 +19,70 @@ tr.top{
 em{
     background-color: blue;
 }
+
+h2{
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+h1{
+    text-transform: capitalize;
+}
+
+h3{
+    text-transform: capitalize;
+}
+
+h4{
+    text-transform: capitalize;
+}
+
+h5{
+    text-transform: capitalize;
+}
+
+h6{
+    text-transform: capitalize;
+}
+
+h2::first-letter{
+    font-size: xx-large;
+}
+
+tr:nth-child(even){
+    background-color: yellow;
+}
+
+tr:hover{
+    background-color: lightskyblue;
+}
+
+li{
+    display: inline;
+}
+
+
+thead{
+    background-color: yellow;
+}
+
+::selection{
+    background-color: blueviolet;
+}
+
+body a:not(.navi) {
+    cursor: pointer;
+  }
+
+input.mainame{
+    height: 50px;
+}
+
+input{
+    height: 20px;
+    border-color: gray;
+}
+
+
+
 

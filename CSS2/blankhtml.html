@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="styling.css">
 </head>
 <body>
-    <nav>
+    <nav class="navi">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">All Posts</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="firstnav">Home</a></li>
+            <li><a href="#" class="navi">All Posts</a></li>
+            <li><a href="#" class="navi">About Us</a></li>
+            <li><a href="#" class="navi">Contact</a></li>
         </ul>
     </nav>
     <header>
         <h1>The Blog</h1>
     </header>
     <main>
+        <h2>Intro</h2>
         <h2> <em> Recent Blog Posts  </em></h2>
         <div class="blog-post">
             <img src="https://picsum.photos/seed/2/320/200" alt="Sample Image">
@@ -126,6 +127,16 @@
                 </tr>
             </tbody>
         </table>
+        <form >
+            <label for="First Name">First Name</label>
+            <input type="text" name="First Name"
+            id="First Name" class="mainame">
+            <aside><p></p></aside>
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="Last Name"
+            id="Last Name" >
+            <aside><p></p></aside>
+        </form>
         <!-- Add more blog posts here -->
 
         <div class="pagination">
