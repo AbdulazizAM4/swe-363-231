@@ -3,7 +3,7 @@ body{
     color: #3F3F3F
   }
   
-  a{
+  a:not(.lang){
     color: #3F3F3F;
     text-decoration: none;
   }
