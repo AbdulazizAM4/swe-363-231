@@ -22,12 +22,40 @@ li{
 nav{
     text-align: center;
 }
-p::first-letter{
+p::first-letter:not(current){
     color: #F72D57;
     font-size: x-large;
 }
 
 img{
     align-items: center;
+}
+div.image{
+    position: relative;
+    display: inline-block;
+ }
+
+div.image::after {
+    content: "AA";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+div.date{
+    position: relative;
+}
+
+p.current{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+p.mydate{
+    display: inline-block;
+    margin-right: 10px
 }
 
