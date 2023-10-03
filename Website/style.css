@@ -135,5 +135,18 @@ p.current{
     top: 0;
     right: 0;
 }
-
+@media (1px <= width <= 769px){
+    img{
+        max-width: 100%;
+    }
+    div{
+        max-width: 100%;
+    }
+    article{
+        max-width: 100%;
+    }
+    p{
+        font-size: 1.5em;
+    }
+}
 
