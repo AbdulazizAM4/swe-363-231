@@ -63,7 +63,10 @@
             counter = 0
             let state = false
             let board = document.getElementsByClassName("board")[0]
+            let cells = document.querySelectorAll('.cell');
             board.addEventListener("click", cellClicked)
+            
+            
             function cellClicked(event) {
                 let cell = event.target
                 if (cell.id==="resetButton"){

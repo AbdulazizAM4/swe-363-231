@@ -19,3 +19,10 @@ for(let para of art){
     paragraph = para.text
     article.append(paragraph)
 }
+let alert=document.querySelector(".alert")
+let x=document.querySelector(".close")
+console.log(x.innerText)
+x.addEventListener("click",e=>{
+    console.log(x.innerText)
+    alert.setAttribute("style","display:none")
+})
