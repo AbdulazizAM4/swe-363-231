@@ -65,6 +65,12 @@
         body.append(foot.innerText = pizzaR.getType())
         body.append(foot.innerText = " ")
         body.append(foot.innerText = pizzaR.getMain())
+        const revenue = [20,30,10,45,64]
+        const tax = revenue.map((x) => x * 1.15);
+        console.log(tax)
+        const initialValue = 0;
+        const totalRevenue = tax.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue);
+        console.log(totalRevenue)
     </script>
     <script src="key.js"></script> 
 </html>
