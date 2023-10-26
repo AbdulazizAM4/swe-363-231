@@ -41,6 +41,31 @@
             <span class="close">Accept</span>
         </div>
     </body>
+    <script>
+        class pizza{
+            constructor(type, main_ing){
+                this.type = type
+                this.main_ing = main_ing
+            }
+            getType(){
+                return this.type
+            }
+            getMain(){
+                return this.main_ing
+            }
+        }
+        const pizzaS = new pizza("Truffle Pizza","Truffles")
+        const pizzaR = new pizza("Marghareta", "Cheese")
+        const body = document.body
+        const foot = document.createElement("footer")
+        body.append(foot.innerText = pizzaS.getType())
+        body.append(foot.innerText = " ")
+        body.append(foot.innerText = pizzaS.getMain())
+        body.append(foot.innerText = " ")
+        body.append(foot.innerText = pizzaR.getType())
+        body.append(foot.innerText = " ")
+        body.append(foot.innerText = pizzaR.getMain())
+    </script>
     <script src="key.js"></script> 
 </html>
 
