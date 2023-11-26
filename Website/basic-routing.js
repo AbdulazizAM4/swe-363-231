@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 app.use(express.static(__dirname));
+const router = require('./router');
+app.use(router)
 
 app.get("/finish", (req, res) => {
     res.sendFile(__dirname + "/finish.html");
@@ -14,20 +16,11 @@ app.get("/contact", (req, res) => {
 app.get("/game", (req, res) => {
     res.sendFile(__dirname + "/game.html");
 });
-app.get("/order-ar", (req, res) => {
-    res.sendFile(__dirname + "/order-ar.html");
-});
 app.get("/order", (req, res) => {
     res.sendFile(__dirname + "/order.html");
 });
-app.get("/ordernow-ar", (req, res) => {
-    res.sendFile(__dirname + "/ordernow-ar.html");
-});
 app.get("/ordernow", (req, res) => {
     res.sendFile(__dirname + "/ordernow.html");
-});
-app.get("/pizza-ar", (req, res) => {
-    res.sendFile(__dirname + "/pizza-ar.html");
 });
 app.get("/pizza", (req, res) => {
     res.sendFile(__dirname + "/pizza.html");
@@ -37,9 +30,6 @@ app.get("/quote", (req, res) => {
 });
 app.get("/screensave", (req, res) => {
     res.sendFile(__dirname + "/screensave.html");
-});
-app.get("/story-ar", (req, res) => {
-    res.sendFile(__dirname + "/story-ar.html");
 });
 app.get("/story", (req, res) => {
     res.sendFile(__dirname + "/story.html");
